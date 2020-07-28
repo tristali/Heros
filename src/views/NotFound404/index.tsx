@@ -1,6 +1,6 @@
 import React from 'react';
 
-function NotFound404(props) {
+function NotFound404() {
   return (
     <div>
       NotFound404

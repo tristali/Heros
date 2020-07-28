@@ -3,7 +3,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import RouterView from './router';
 import config from './router/config';
 import { ResetStyle, GlobalStyle } from './assets/globalStyle';
-import { ThemeProvider } from "styled-components";
 
 function App() {
   const { routes } = config;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function List(props) {
+function List() {
   return (
     <div>
       List
