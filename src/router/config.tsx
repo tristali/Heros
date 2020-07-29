@@ -1,7 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import List from '../views/List';
-import Profile from '../views/Profile';
+import List from '../views/Heros/List';
+import Profile from '../views/Heros/Profile';
 import NotFound404 from '../views/NotFound404';
 
 type routeInfo = {

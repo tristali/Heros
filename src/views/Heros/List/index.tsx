@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import config from '../../assets/config';
-import Header from '../../components/Header';
+import config from '../../../assets/config';
+import Header from '../../../components/Header';
 
 function List() {
   const { colors } = config;

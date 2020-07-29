@@ -8,7 +8,7 @@ function Header(props:{
   color: string;
 }) {
   const { children, color } = props;
-  const textStyle = 'position: absolute; top: 27%; width: 100%;'
+  const textStyle = 'position: absolute; top: 30%; width: 100%;'
   return (
     <Div>
       <BoomDialog />
