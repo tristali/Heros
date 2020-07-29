@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import config from '../../assets/config';
+import Header from '../../components/Header';
 
 function List() {
+  const { colors } = config;
   return (
-    <div>
-      List
-    </div>
+    <Fragment>
+      <Header color={colors.main[1]}>HEROS</Header>
+    </Fragment>
   );
 }
 

@@ -1,16 +1,23 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import RouterView from './router';
-import config from './router/config';
-import { ResetStyle, GlobalStyle } from './assets/globalStyle';
+import { default as routerConfig } from './router/config';
+import { default as cssConfig } from './assets/config';
+import ResetStyle from './assets/components/ResetStyle';
+import GlobalStyle from './assets/components/GlobalStyle';
+import DotBackground from './components/DotBackground';
 
 function App() {
-  const { routes } = config;
+  const { routes } = routerConfig;
+  const { colors } = cssConfig;
+  const backgroundStyle = 'padding: 3%; min-width: 300px;';
   return (
     <Router>
       <ResetStyle />
       <GlobalStyle />
-      <RouterView routes={routes}/>
+      <DotBackground fullVersion color={colors.main} styles={backgroundStyle}>
+        <RouterView routes={routes} />
+      </DotBackground>
     </Router>
   );
 }

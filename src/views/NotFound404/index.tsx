@@ -1,10 +1,13 @@
 import React from 'react';
+import Header from '../../components/Header';
+import config from '../../assets/config';
 
 function NotFound404() {
+  const { colors } = config;
   return (
-    <div>
+    <Header color={colors.main[1]}>
       NotFound404
-    </div>
+    </Header>
   );
 }
 

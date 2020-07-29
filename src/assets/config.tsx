@@ -15,27 +15,32 @@ const config = {
       normal: 500,
     },
     lineHeight: '1.5em',
-    letterSpacing: '0.5px',
+    letterSpacing: '1px',
     sizes: {
       tag: {
-        h1: '3rem',
-        h2: '2rem',
-        h3: '1.5rem',
-        button: '1rem',
+        h1: '4.9rem',
+        h2: '2.9rem',
+        h3: '2.3rem',
+        h4: '1.5rem',
+        h5: '0.8rem',
+        button: '1.4rem',
       },
       root: {
         large: '18px',
         medium: '16px',
-        small: '14px',
+        small: '10px',
       },
     },
   },
   colors: {
-    yello: ['#F6F61A', '#F3B206'],
-    green: ['#84C43D', '#44970F'],
-    red: ['#FD0001', '#AF0000'],
-    bule: ['#5BB1F6', '#207BED'],
-    violet: ['#9670C5', '#583198'],
+    main: ['#F6F61A', '#F3B206'], // yello
+    item: [
+      ['#5BB1F6', '#207BED'], //bule
+      ['#FD0001', '#AF0000'], //red
+      ['#9670C5', '#583198'], //violet
+      ['#84C43D', '#44970F'], //green
+      ['#FBA604', '#FEE216'], //orange
+    ]
   },
   borderRadius: {
     large: '100%',
