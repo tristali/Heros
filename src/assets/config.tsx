@@ -50,7 +50,7 @@ const config = {
     small: '12px',
   },
   screenSize: {
-    tablet: '1024px',
+    tablet: '900px',
     mobile: '420px',
   },
 };

@@ -21,11 +21,13 @@ function List() {
   const getList = () =>
     list.map((item, index) => <Card key={index} {...item} />);
 
+  const isLoading = list.length === 0;
+
   const renderList = () => {
-    if (list.length > 0){
-      return getList();
+    if (isLoading){
+      return <Loading />;
     }
-    return <Loading />;
+  return getList();
   }
 
   return (
@@ -33,7 +35,7 @@ function List() {
       <Link to={`/heroes`}>
         <Header color={backgroundColor[1]}>HEROS</Header>
       </Link>
-      <Div>{renderList()}</Div>
+      <Div theme={{ isLoading }}>{renderList()}</Div>
     </Fragment>
   );
 }

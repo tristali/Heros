@@ -1,39 +1,39 @@
 import styled from 'styled-components';
 import config from '../../assets/config';
-const { colors } = config;
 
+const { colors } = config;
+const base = 1;
+const unit = 'rem';
+const boxSize = base * 10;
+const dotSize = base * 1.5;
 const Div = styled.div`
-  width: 100%;
-  height: 100%;
-  div {
     display: inline-block;
     position: relative;
-    width: 80px;
-    height: 80px;
-  }
-  div > div {
+    width: ${boxSize}${unit};
+    height: ${boxSize}${unit};
+  div {
     position: absolute;
-    top: 33px;
-    width: 13px;
-    height: 13px;
+    top: ${(boxSize - dotSize) / 2}${unit};
+    width: ${dotSize}${unit};
+    height: ${dotSize}${unit};
     border-radius: 50%;
     background: ${colors.light};
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
   }
-  div >div:nth-child(1) {
-    left: 8px;
+  div:nth-child(1) {
+    left: ${base}${unit};
     animation: lds-ellipsis1 0.6s infinite;
   }
-  div >div:nth-child(2) {
-    left: 8px;
+  div:nth-child(2) {
+    left: ${base}${unit};
     animation: lds-ellipsis2 0.6s infinite;
   }
-  div >div:nth-child(3) {
-    left: 32px;
+  div:nth-child(3) {
+    left: ${base * 4}${unit};
     animation: lds-ellipsis2 0.6s infinite;
   }
-  div >div:nth-child(4) {
-    left: 56px;
+  div:nth-child(4) {
+    left: ${base * 7}${unit};
     animation: lds-ellipsis3 0.6s infinite;
   }
   @keyframes lds-ellipsis1 {
@@ -57,7 +57,7 @@ const Div = styled.div`
       transform: translate(0, 0);
     }
     100% {
-      transform: translate(24px, 0);
+      transform: translate(${base * 3}${unit}, 0);
     }
   }
 `;

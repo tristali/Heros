@@ -16,9 +16,8 @@ function ViewLayer() {
   const { colors } = cssConfig;
   const backgroundStyle = `
     padding: 3%; 
-    min-width: 300px; 
-    max-width: 1200px;
-    margin: 0 auto;`
+    min-width: 300px;
+  `
 
   useEffect(() => {
     dispatch(initalBackgroundColor(colors.main));

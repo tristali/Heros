@@ -21,9 +21,7 @@ function Card(props: {
   const getStyleBorder = isCurrentProfile ? '' : `border: solid 3px ${colors.dark};`;
   const styles = `
     ${getStyleBorder} 
-    border-radius: ${borderRadius.medium}; 
-    width: 25%; 
-    margin: 0.5vw; 
+    border-radius: ${borderRadius.medium};
     :hover{
       box-shadow: 6px 6px 5px rgba(0,0,0,.5);
   }`;
