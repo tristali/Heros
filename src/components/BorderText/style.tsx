@@ -33,17 +33,20 @@ const setTextShadow = (props: {
 }
 
 const Div = styled.div`
-  ${props => {
+  word-break: break-all;
+  ${(props) => {
     const { color, borderColor, borderWidth, styles } = props.theme;
     const { fonts } = config;
     const divStyles = [];
-        if (styles) {
-          divStyles.push(styles);
-        }
-        divStyles.push(`font-weight: ${fonts.weights.bold};`);
-        divStyles.push(`color: ${color};`);
-        divStyles.push(`text-shadow: ${setTextShadow({borderWidth, borderColor})};`);
-      return divStyles.join(' ');
+    if (styles) {
+      divStyles.push(styles);
+    }
+    divStyles.push(`font-weight: ${fonts.weights.bold};`);
+    divStyles.push(`color: ${color};`);
+    divStyles.push(
+      `text-shadow: ${setTextShadow({ borderWidth, borderColor })};`
+    );
+    return divStyles.join(' ');
   }}
 `;
 

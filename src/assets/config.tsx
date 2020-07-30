@@ -40,17 +40,19 @@ const config = {
       ['#9670C5', '#583198'], //violet
       ['#84C43D', '#44970F'], //green
       ['#FBA604', '#FEE216'], //orange
-    ]
+    ],
+    dark: '#000',
+    light: '#fff',
   },
   borderRadius: {
     large: '100%',
-    medium: 15,
-    small: 5,
+    medium: '15px',
+    small: '12px',
   },
   screenSize: {
     tablet: '1024px',
     mobile: '420px',
-  }
+  },
 };
 
 export default config;

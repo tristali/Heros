@@ -1,29 +1,37 @@
 import { MODIFY_BGC, INITAL_BGC } from './action';
-import { backgroundColor } from '../components/DotBackground';
+import type { backgroundColor } from '../components/DotBackground';
+import config from '../assets/config';
+const { colors } = config;
 
-const reducer = (state={}, action: {
+type state = {
+  backgroundColor: backgroundColor
+}
+
+const initalState = {
+  backgroundColor: colors.main
+};
+
+const reducer = (state: state = initalState, action: {
   type: string;
   payload: backgroundColor;
 }) => {
   switch (action.type) {
     case MODIFY_BGC:
-      console.log('MODIFY')
       return {
         ...state,
         backgroundColor: action.payload,
       };
 
     case INITAL_BGC:
-      console.log('INITAL')
       return {
         ...state,
         backgroundColor: action.payload,
       };
 
     default:
-      console.log('default')
       return { ...state };
   }
 }
 
 export default reducer;
+export type { state };

@@ -1,5 +1,8 @@
 import React from 'react';
 import Div from './style';
+import config from '../../assets/config';
+
+const { colors } = config;
 
 function BorderText(props:{
   children: React.ReactNode | React.FC;
@@ -15,8 +18,8 @@ function BorderText(props:{
 }
 
 BorderText.defaultProps = {
-  color: '#fff',
-  borderColor: '#000',
+  color: colors.light,
+  borderColor: colors.dark,
   borderWidth: 2,
 };
 

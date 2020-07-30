@@ -1,4 +1,4 @@
-import { backgroundColor } from '../components/DotBackground';
+import type { backgroundColor } from '../components/DotBackground';
 
 const MODIFY_BGC = 'MODIFY_BGC';
 const INITAL_BGC = 'INITAL_BGC';

@@ -9,7 +9,7 @@ const Div = styled.div`
       }
       if (fullVersion){
         divStyles.push(`width: 100vw; 
-                        height: 100vh;`)
+                        min-height: 100vh;`)
       }
       if (color){
         divStyles.push(`background: radial-gradient(${color[1]} 50%, transparent 0) ${color[0]};
