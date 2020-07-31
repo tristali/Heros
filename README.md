@@ -1,68 +1,130 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+👉 [🔗 Instructions by Hahow.](https://github.com/hahow/hahow-recruit/blob/master/frontend.md)
+👉 [🔗 Demo on Github Page.](https://tristali.github.io/Heros)
 
-## Available Scripts
+## 🚀 Quick Start
 
-In the project directory, you can run:
+#### 👉 To run this project website locally.
 
-### `npm start`
+1️⃣. Clone the project from Heros `https://github.com/tristali/Heros.git`.
+2️⃣. Under project root, run `npm install` to install all dependencies.
+3️⃣. Make sure that localhost:3000 port is available.
+4️⃣. Run `npm start`.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### 👉 Step
+```
+git clone https://github.com/tristali/Heros.git
+cd Heros
+npm install
+npm start
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## 🧱 File Structure
 
-### `npm test`
+```
+└── src
+    ├── API                  
+    │   ├── Heros                          /** The folder according to views. */
+    │   └── method.tsx                     /** About set HTTP methods by Axios. */
+    ├── assets                             /** About CSS setting and img. */     
+    │   ├── components
+    │   │   ├── BoomDialog                 /** Wrapped svg component - BoomDialog. */
+    │   │   ├── GlobalStyle.tsx
+    │   │   └── ResetStyle.tsx
+    │   ├── img
+    │   ├── config.tsx                    /** Object about CSS setting. ex. font, color and so on. */
+    │   └── method.tsx                    /** About set media screens and default font-size method. */
+    ├── components                        /** About Basic common components. */           
+    │   ├── Avatar
+    │   ├── BorderText
+    │   ├── Button
+    │   ├── DotBackground
+    │   ├── Header
+    │   ├── IconBotton
+    │   └── Loading
+    ├── router                    
+    │   ├── components
+    │   │   └── Route.tsx                 /** Component return Route and this child Routes. */
+    │   ├── config.tsx                    /** Object about all routes setting. */
+    │   ├── index.tsx                     /** Component return all Route Component wrapped in Switch. */
+    │   └── method.tsx                    /** About map Route method from array. */
+    ├── store                             /** Redux store */
+    │   ├── reducer
+    │   │   ├── index.tsx
+    │   │   └── type.tsx
+    │   └── action.tsx
+    ├── views
+    │   ├── Heros                          /** The folder according to page. */
+    │   │   ├── List
+    │   │   │   ├── components/Card
+    │   │   │   ├── index.tsx
+    │   │   │   └── style.tsx
+    │   │   ├── Profile
+    │   │   │   ├── components            /** All customized components about this component */
+    │   │   │   │   ├── ConfirmButton
+    │   │   │   │   ├── Counter
+    │   │   │   │   ├── Form
+    │   │   │   │   ├── Info
+    │   │   │   │   └── Remained
+    │   │   │   ├── index.tsx
+    │   │   │   └── style.tsx
+    │   │   └── method.tsx
+    │   ├── NotFound404
+    │   └── ViewLayer                      /** This component about render web background and router. */
+    ├── App.tsx                            /** This component about setting router and redux root, and reset, global css. */
+    └── index.tsx                          /** Setting ReactDOM render in HTML. */
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📚 Third-party Libraries
 
-### `npm run build`
+### [🔗 Styled-Components](https://styled-components.com/)
+> 📄 A styling technique where JavaScript is used to style components.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+👉【Purpose of usage】 Use CSS in JavaScript.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### [🔗 React Router](https://reactrouter.com/)
+> 📄 A collection of navigational components that compose declaratively with your application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+👉 【Purpose of usage】 Build a single-page web application with navigation without the page refreshing as the user navigates.
 
-### `npm run eject`
+### [🔗 Axios](https://github.com/axios/axios)
+> 📄 Promise based HTTP client for the browser and node.js.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+👉 【Purpose of usage】 Set HTTP methods and transforms for JSON data.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### [🔗 Redux](https://redux.js.org/)
+> 📄 A Predictable State Container for JavaScript Apps.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+👉 【Purpose of usage】 Manage all state in one store.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### [🔗 TypeScript](https://www.typescriptlang.org)
+> 📄 It is a strict syntactical superset of JavaScript and adds optional static typing to the language.
 
-## Learn More
+👉 【Purpose of usage】 Make code easier to read, understand and debug.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### [🔗 Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension#13-use-redux-devtools-extension-package-from-npm)
+> 📄 For TypeScript, which contains all the definitions, or just use (window as any) (see Recipes for an example).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👉 【Purpose of usage】 Solve the error problem for 「Redux DevTools Extension」 `window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()` argument in .tsx.
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## 📝 Principal of annotation
+👉 When the constant, variable or key can't express the definition fully.
+> [🔗 Example](https://github.com/tristali/Heros/blob/master/src/assets/config.tsx) line 35-43
 
-### Analyzing the Bundle Size
+👉 If one file has more than one important things, I'll add annotation on it to distinguish them.
+> [🔗 Example](https://github.com/tristali/Heros/blob/master/src/assets/method.tsx)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## 💪 Obstacle
 
-### Making a Progressive Web App
+### 😓 Related technology about Styled-Components, TypeScript and Redux.
+👀【Reason】In the past experience, I used these on the mature project (based on the predecessors), so it’s not understand very completely.
+👉【Solution】Google keywords, watch the online course, search in books and so on. And the most important thing is coding.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### 😓 Related state manage about set `backgroundColor` and so on is based on the current Hero.
+👀【Reason 1️⃣】`backgroundColor` setting in the outermost (originally in `App.js`), and profile component separated by multiple layers. However, I didn't use redux at the beginning.
+👉【Solution 1️⃣】Use redux, and it based on last description.
 
-### Advanced Configuration
+👀【Reason 2️⃣】During the exercise, I found that component which have `Provider` could not use the react-redux `useDispatch` method. 
+> note. `backgroundColor` setting in the outermost (originally in App.js).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+👉【Solution 2️⃣】Try in coding and wrapped `DotBackground` in `ViewLayer` component of `views` folder, because the `backgroundColor` is also the display layer root.
