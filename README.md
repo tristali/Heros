@@ -5,19 +5,10 @@
 
 #### 👉 To run this project website locally.
 
-1️⃣. Clone the project from Heros `https://github.com/tristali/Heros.git`.
-
-<br />
-
-2️⃣. Under project root, run `npm install` to install all dependencies.
-
-<br />
-
-3️⃣. Make sure that localhost:3000 port is available.
-
-<br />
-
-4️⃣. Run `npm start`.
+1. Clone the project from Heros `https://github.com/tristali/Heros.git`.
+2. Under project root, run `npm install` to install all dependencies.
+3. Make sure that localhost:3000 port is available.
+4. Run `npm start`.
 
 #### 👉 Step
 ```
