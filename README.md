@@ -1,5 +1,5 @@
 - 👉 [🔗 Instructions by Hahow.](https://github.com/hahow/hahow-recruit/blob/master/frontend.md)
-- 👉 [🔗 Demo on Github Page.](https://tristali.github.io/Heros)
+- 👉 [🔗 Demo on Github Page.](https://tristali.github.io/Heros/#/)
 
 ## 🚀 Quick Start
 
