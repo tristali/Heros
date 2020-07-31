@@ -6,7 +6,7 @@ import DotBackground from '../../../../../components/DotBackground';
 import config from '../../../../../assets/config';
 import { useSelector } from 'react-redux';
 import { getColor } from '../../../method';
-import type { StateType } from '../../../../../store/reducer';
+import type { StateType } from '../../../../../store/reducer/type';
 
 function Card(props: { 
   id : string; 

@@ -1,5 +1,5 @@
 import type { BackgroundColorType } from '../components/DotBackground';
-import type { ProfileType, RemainderType, IsProfileLoadingType } from './reducer';
+import type { ProfileType, RemainderType, IsProfileLoadingType } from './reducer/type';
 
 const MODIFY_BGC = 'MODIFY_BGC';
 const INITAL_BGC = 'INITAL_BGC';

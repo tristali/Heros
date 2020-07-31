@@ -6,7 +6,7 @@ import { default as cssConfig } from '../../assets/config';
 import DotBackground from '../../components/DotBackground';
 import { useSelector, useDispatch } from 'react-redux';
 import { initalBackgroundColor } from '../../store/action';
-import type { StateType } from '../../store/reducer';
+import type { StateType } from '../../store/reducer/type';
 
 function ViewLayer() {
   const backgroundColor = useSelector((state: StateType) => state.backgroundColor);

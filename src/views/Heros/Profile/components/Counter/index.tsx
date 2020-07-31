@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import IconBotton from '../../../../../components/IconBotton';
 import config from '../../../../../assets/config';
 import { modifyProfile, modifyRemainder } from '../../../../../store/action';
-import type { StateType, RemainderType, ProfilePropsKeyType } from '../../../../../store/reducer';
+import type { StateType, RemainderType, ProfilePropsKeyType } from '../../../../../store//reducer/type';
 import type { NumberType } from '../Info';
 
 function Counter(props:{

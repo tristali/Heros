@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import Div from './style';
 import ConfirmButton from '../ConfirmButton';
 import Info from '../Info';
-import type { StateType, ProfilePropsKeyType } from '../../../../../store/reducer';
+import type { StateType, ProfilePropsKeyType } from '../../../../../store/reducer/type';
 import type { HeroIdType } from '../../index';
 
 function Form(props:{

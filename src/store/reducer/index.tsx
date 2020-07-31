@@ -1,37 +1,29 @@
-import { 
-  MODIFY_BGC, 
-  INITAL_BGC, 
-  MODIFY_PROFILE, 
-  INITAL_PROFILE, 
-  MODIFY_REMAINDER, 
+import {
+  MODIFY_BGC,
+  INITAL_BGC,
+  MODIFY_PROFILE,
+  INITAL_PROFILE,
+  MODIFY_REMAINDER,
   INITAL_REMAINDER,
-  MODIFY_PROFILE_LOADING, 
-} from './action';
-import type { BackgroundColorType } from '../components/DotBackground';
-import config from '../assets/config';
+  MODIFY_PROFILE_LOADING,
+} from '../action';
+import config from '../../assets/config';
+import type {
+  StateType,
+  ModifyBGCInterface,
+  InitalBGCInterface,
+  ModifyProfileInterface,
+  InitalProfileInterface,
+  ModifyRemainderInterface,
+  InitalRemainderInterface,
+  ModifyProfileLoadingInterface,
+} from './type';
+
 const { colors } = config;
-
-type ProfileType = {
-  str: number;
-  int: number;
-  agi: number;
-  luk: number;
-};
-
-type ProfilePropsKeyType = 'str' | 'int' | 'agi' | 'luk';
-type RemainderType = number;
-type IsProfileLoadingType = boolean;
-
-type StateType = {
-  backgroundColor: BackgroundColorType;
-  profile: ProfileType;
-  remainder: RemainderType;
-  isProfileLoading: IsProfileLoadingType;
-}
 
 const initalState = {
   backgroundColor: colors.main,
-  profile: { 
+  profile: {
     str: 0,
     int: 0,
     agi: 0,
@@ -41,10 +33,17 @@ const initalState = {
   isProfileLoading: false,
 };
 
-const reducer = (state: StateType = initalState, action: {
-  type: string;
-  payload: BackgroundColorType;
-}) => {
+const reducer = (
+  state: StateType & any = initalState,
+  action:
+    | ModifyBGCInterface
+    | InitalBGCInterface
+    | ModifyProfileInterface
+    | InitalProfileInterface
+    | ModifyRemainderInterface
+    | InitalRemainderInterface
+    | ModifyProfileLoadingInterface
+) => {
   switch (action.type) {
     case MODIFY_BGC:
       return {
@@ -91,7 +90,6 @@ const reducer = (state: StateType = initalState, action: {
     default:
       return { ...state };
   }
-}
+};
 
 export default reducer;
-export type { StateType, ProfileType, RemainderType, IsProfileLoadingType, ProfilePropsKeyType };

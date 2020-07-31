@@ -5,7 +5,7 @@ import Remained from '../Remained';
 import Div from './style';
 import { editProfile } from '../../../../../API/Heros';
 import { modifyProfileLoading, initalRemainder } from '../../../../../store/action';
-import type { StateType } from '../../../../../store/reducer';
+import type { StateType } from '../../../../../store/reducer/type';
 import type { HeroIdType } from '../../index';
  
 function ConfirmButton(props:{

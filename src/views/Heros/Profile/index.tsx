@@ -8,7 +8,7 @@ import Div from './style';
 import { fetchProfile } from '../../../API/Heros';
 import Loading from '../../../components/Loading';
 import Form from './components/Form';
-import type { StateType } from '../../../store/reducer';
+import type { StateType } from '../../../store/reducer/type';
 
 type HeroIdType = string;
 

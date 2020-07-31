@@ -1,5 +1,5 @@
 import { setAxios } from '../method';
-import { ProfileType } from '../../store/reducer';
+import { ProfileType } from '../../store/reducer/type';
 
 const url = '/heroes';
 const getProfileUrl = (parameter: string) => `${url}/${parameter}/profile`;

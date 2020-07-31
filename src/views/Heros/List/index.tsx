@@ -6,7 +6,7 @@ import { fetchList } from '../../../API/Heros';
 import Card from './components/Card';
 import Div from './style';
 import { useSelector } from 'react-redux';
-import type { StateType } from '../../../store/reducer';
+import type { StateType } from '../../../store/reducer/type';
 
 function List() {
   const [list, setList] = useState([]);
