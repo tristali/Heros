@@ -5,10 +5,19 @@
 
 #### 👉 To run this project website locally.
 
-- 1️⃣. Clone the project from Heros `https://github.com/tristali/Heros.git`.
-- 2️⃣. Under project root, run `npm install` to install all dependencies.
-- 3️⃣. Make sure that localhost:3000 port is available.
-- 4️⃣. Run `npm start`.
+1️⃣. Clone the project from Heros `https://github.com/tristali/Heros.git`.
+
+<br />
+
+2️⃣. Under project root, run `npm install` to install all dependencies.
+
+<br />
+
+3️⃣. Make sure that localhost:3000 port is available.
+
+<br />
+
+4️⃣. Run `npm start`.
 
 #### 👉 Step
 ```
@@ -121,6 +130,8 @@ npm start
 👉 When the constant, variable or key can't express the definition fully.
 > [🔗 Example](https://github.com/tristali/Heros/blob/master/src/assets/config.tsx) line 35-43
 
+--
+
 👉 If one file has more than one important things, I'll add annotation on it to distinguish them.
 > [🔗 Example](https://github.com/tristali/Heros/blob/master/src/assets/method.tsx)
 
@@ -130,11 +141,13 @@ npm start
 👀【Reason】In the past experience, I used these on the mature project (based on the predecessors), so it’s not understand very completely.
 👉【Solution】Google keywords, watch the online course, search in books and so on. And the most important thing is coding.
 
+--
+
 ### 😓 Related state manage about set `backgroundColor` and so on is based on the current Hero.
 👀【Reason 1️⃣】`backgroundColor` setting in the outermost (originally in `App.js`), and profile component separated by multiple layers. However, I didn't use redux at the beginning.
 👉【Solution 1️⃣】Use redux, and it based on last description.
 
---
+-
 
 👀【Reason 2️⃣】During the exercise, I found that component which have `Provider` could not use the react-redux `useDispatch` method. 
 > note. `backgroundColor` setting in the outermost (originally in App.js).
