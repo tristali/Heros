@@ -16,7 +16,6 @@ const Div = styled.div`
   }
   > span {
     ${setBorderRadius(colors.dark)};
-    display: inline-block;
   }
     max-width: 210px;
     margin: 0 auto;

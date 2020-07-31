@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import config from '../../assets/config';
 
-
+/** text-shadow setting */
 const multiply = (x: number, y: number):string => {
   return (x * y).toString()
 }
@@ -32,20 +31,20 @@ const setTextShadow = (props: {
   return textShadowProps.join(', ');
 }
 
+/** ====  text-shadow setting end ==== */
+
 const Div = styled.div`
   word-break: break-all;
   ${(props) => {
     const { color, borderColor, borderWidth, styles } = props.theme;
-    const { fonts } = config;
     const divStyles = [];
-    if (styles) {
-      divStyles.push(styles);
-    }
-    divStyles.push(`font-weight: ${fonts.weights.bold};`);
     divStyles.push(`color: ${color};`);
     divStyles.push(
       `text-shadow: ${setTextShadow({ borderWidth, borderColor })};`
     );
+    if (styles) {
+      divStyles.push(styles);
+    }
     return divStyles.join(' ');
   }}
 `;

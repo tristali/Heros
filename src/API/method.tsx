@@ -6,7 +6,7 @@ const createAxios = (props: {
   method: 'get' | 'patch';
   baseURL: string;
   url: string;
-  data? : {[key: string]: number}
+  data?: { [key: string]: number | null | string }
 }) => {
   const argument = {'Content-Type': 'application/json', ... props};
   return OriginAxios(argument);
@@ -15,7 +15,7 @@ const createAxios = (props: {
 const setAxios = (
   method: 'get' | 'patch',
   url: string, 
-  data?: { [key: string]: number }
+  data?: { [key: string]: number | null | string }
 ) => {
   if (method === 'patch' && data) {
     return createAxios({

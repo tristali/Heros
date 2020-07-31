@@ -1,8 +1,8 @@
 import React from 'react';
 import Route from './components/Route';
-import { routesInfo } from './config';
+import type { RoutesType } from './config';
 
-const renderRoutes = (routes: routesInfo) =>
+const renderRoutes = (routes: RoutesType) =>
   routes.map((item) => {
     const { name, ...props } = item;
     return <Route key={name} {...props} />;

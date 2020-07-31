@@ -13,12 +13,15 @@ const GlobalStyle = createGlobalStyle`
       mobile: sizes.root.small,
     }, config.screenSize)}
     font-family: ${family.join(', ')};
-    font-weight: ${weights.normal};
+    font-weight: ${weights.bold};
     line-height: ${lineHeight};
     letter-spacing: ${letterSpacing};
     text-align: center;
   }
   ${setFontSizes(sizes.tag)}
+  span {
+    display: inline-block;
+  }
   `;
 
 export default GlobalStyle;

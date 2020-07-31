@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Span = styled.span`
+const Span = styled.div`
   > svg {
     max-width: 520px;
   }

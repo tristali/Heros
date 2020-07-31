@@ -69,6 +69,8 @@ const ResetStyle = createGlobalStyle`
     padding: 0;
     border: none;
     background: none;
-  }`;
+    outline: none;
+  }
+  `;
 
   export default ResetStyle;

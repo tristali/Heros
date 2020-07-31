@@ -6,10 +6,10 @@ import { default as cssConfig } from '../../assets/config';
 import DotBackground from '../../components/DotBackground';
 import { useSelector, useDispatch } from 'react-redux';
 import { initalBackgroundColor } from '../../store/action';
-import type { state } from '../../store/reducer';
+import type { StateType } from '../../store/reducer';
 
 function ViewLayer() {
-  const backgroundColor = useSelector((state: state) => state.backgroundColor);
+  const backgroundColor = useSelector((state: StateType) => state.backgroundColor);
   const dispatch = useDispatch();
   const location = useLocation();
   const { routes } = routerConfig;
@@ -21,7 +21,7 @@ function ViewLayer() {
 
   useEffect(() => {
     dispatch(initalBackgroundColor(colors.main));
-  }, [initalBackgroundColor, dispatch, location.pathname]);
+  }, [dispatch, initalBackgroundColor, location.pathname]);
 
   return (
     <DotBackground fullVersion color={backgroundColor} styles={backgroundStyle}>

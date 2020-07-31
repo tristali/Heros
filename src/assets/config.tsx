@@ -22,7 +22,7 @@ const config = {
         h2: '2.9rem',
         h3: '2.3rem',
         h4: '1.5rem',
-        h5: '0.8rem',
+        span: '0.9rem',
         button: '1.4rem',
       },
       root: {
@@ -35,11 +35,11 @@ const config = {
   colors: {
     main: ['#F6F61A', '#F3B206'], // yello
     item: [
-      ['#5BB1F6', '#207BED'], //bule
-      ['#FD0001', '#AF0000'], //red
-      ['#9670C5', '#583198'], //violet
-      ['#84C43D', '#44970F'], //green
-      ['#FBA604', '#FEE216'], //orange
+      ['#5BB1F6', '#207BED'], // bule
+      ['#FD0001', '#AF0000'], // red
+      ['#9670C5', '#583198'], // violet
+      ['#84C43D', '#44970F'], // green
+      ['#FBA604', '#FEE216'], // orange
     ],
     dark: '#000',
     light: '#fff',
@@ -53,6 +53,9 @@ const config = {
     tablet: '900px',
     mobile: '420px',
   },
+  hoverShadow:`:hover{
+      box-shadow: 6px 6px 5px rgba(0,0,0,.3);
+  }`
 };
 
 export default config;

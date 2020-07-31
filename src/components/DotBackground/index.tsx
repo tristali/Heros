@@ -1,11 +1,13 @@
 import React from 'react';
 import Div from './style';
+import config from '../../assets/config';
 
-type backgroundColor = string[];
+type BackgroundColorType = string[];
+const { colors } = config;
 
 function DotBackground(props:{
   children: React.ReactNode | React.FC;
-  color: backgroundColor;
+  color: BackgroundColorType;
   fullVersion: boolean;
   styles?: string;
 }) {
@@ -17,8 +19,9 @@ function DotBackground(props:{
 
 DotBackground.defaultProps = {
   fullVersion: false,
+  color: colors.main,
 };
 
 
 export default DotBackground;
-export type { backgroundColor };
+export type { BackgroundColorType };

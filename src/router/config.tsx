@@ -4,19 +4,19 @@ import List from '../views/Heros/List';
 import Profile from '../views/Heros/Profile';
 import NotFound404 from '../views/NotFound404';
 
-type routeInfo = {
+type RouteType = {
   name?: string;
   path: string;
   render: React.FC;
   exact?: boolean;
-  routes?: routesInfo;
+  routes?: RoutesType;
 }
 
-type routesInfo = routeInfo[]
+type RoutesType = RouteType[]
 
-type configInfo = { routes: routesInfo };
+type ConfigType = { routes: RoutesType };
 
-const config: configInfo = {
+const config: ConfigType = {
   routes: [
     {
       name: 'heroes',
@@ -45,4 +45,4 @@ const config: configInfo = {
 };
 
 export default config;
-export type { configInfo, routesInfo, routeInfo };
+export type { RoutesType, RouteType };

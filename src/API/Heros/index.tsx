@@ -1,4 +1,5 @@
-import { setAxios } from '../../method';
+import { setAxios } from '../method';
+import { ProfileType } from '../../store/reducer';
 
 const url = '/heroes';
 const getProfileUrl = (parameter: string) => `${url}/${parameter}/profile`;
@@ -11,8 +12,8 @@ const fetchProfile = (parameter: string) => {
   return setAxios('get', getProfileUrl(parameter));
 };
 
-const editProfile = (parameter: string, data: {[key: string]: number}) => {
-  return setAxios('get', getProfileUrl(parameter), data);
+const editProfile = (parameter: string, data: ProfileType) => {
+  return setAxios('patch', getProfileUrl(parameter), data);
 };
 
 export { fetchList, fetchProfile, editProfile };
