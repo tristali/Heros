@@ -1,14 +1,14 @@
-👉 [🔗 Instructions by Hahow.](https://github.com/hahow/hahow-recruit/blob/master/frontend.md)
-👉 [🔗 Demo on Github Page.](https://tristali.github.io/Heros)
+- 👉 [🔗 Instructions by Hahow.](https://github.com/hahow/hahow-recruit/blob/master/frontend.md)
+- 👉 [🔗 Demo on Github Page.](https://tristali.github.io/Heros)
 
 ## 🚀 Quick Start
 
 #### 👉 To run this project website locally.
 
-1️⃣. Clone the project from Heros `https://github.com/tristali/Heros.git`.
-2️⃣. Under project root, run `npm install` to install all dependencies.
-3️⃣. Make sure that localhost:3000 port is available.
-4️⃣. Run `npm start`.
+- 1️⃣. Clone the project from Heros `https://github.com/tristali/Heros.git`.
+- 2️⃣. Under project root, run `npm install` to install all dependencies.
+- 3️⃣. Make sure that localhost:3000 port is available.
+- 4️⃣. Run `npm start`.
 
 #### 👉 Step
 ```
@@ -81,25 +81,35 @@ npm start
 
 👉【Purpose of usage】 Use CSS in JavaScript.
 
+--
+
 ### [🔗 React Router](https://reactrouter.com/)
 > 📄 A collection of navigational components that compose declaratively with your application.
 
 👉 【Purpose of usage】 Build a single-page web application with navigation without the page refreshing as the user navigates.
+
+--
 
 ### [🔗 Axios](https://github.com/axios/axios)
 > 📄 Promise based HTTP client for the browser and node.js.
 
 👉 【Purpose of usage】 Set HTTP methods and transforms for JSON data.
 
+--
+
 ### [🔗 Redux](https://redux.js.org/)
 > 📄 A Predictable State Container for JavaScript Apps.
 
 👉 【Purpose of usage】 Manage all state in one store.
 
+--
+
 ### [🔗 TypeScript](https://www.typescriptlang.org)
 > 📄 It is a strict syntactical superset of JavaScript and adds optional static typing to the language.
 
 👉 【Purpose of usage】 Make code easier to read, understand and debug.
+
+--
 
 ### [🔗 Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension#13-use-redux-devtools-extension-package-from-npm)
 > 📄 For TypeScript, which contains all the definitions, or just use (window as any) (see Recipes for an example).
@@ -123,6 +133,8 @@ npm start
 ### 😓 Related state manage about set `backgroundColor` and so on is based on the current Hero.
 👀【Reason 1️⃣】`backgroundColor` setting in the outermost (originally in `App.js`), and profile component separated by multiple layers. However, I didn't use redux at the beginning.
 👉【Solution 1️⃣】Use redux, and it based on last description.
+
+--
 
 👀【Reason 2️⃣】During the exercise, I found that component which have `Provider` could not use the react-redux `useDispatch` method. 
 > note. `backgroundColor` setting in the outermost (originally in App.js).
