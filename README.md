@@ -129,18 +129,20 @@ npm start
 ## 💪 Obstacle
 
 ### 😓 Related technology about Styled-Components, TypeScript and Redux.
-👀【Reason】In the past experience, I used these on the mature project (based on the predecessors), so it’s not understand very completely.
-👉【Solution】Google keywords, watch the online course, search in books and so on. And the most important thing is coding.
+
+- 👀【Reason】In the past experience, I used these on the mature project (based on the predecessors), so it’s not understand very completely.
+- 👉【Solution】Google keywords, watch the online course, search in books and so on. And the most important thing is coding.
 
 --
 
 ### 😓 Related state manage about set `backgroundColor` and so on is based on the current Hero.
-👀【Reason 1️⃣】`backgroundColor` setting in the outermost (originally in `App.js`), and profile component separated by multiple layers. However, I didn't use redux at the beginning.
-👉【Solution 1️⃣】Use redux, and it based on last description.
 
--
+- 👀【Reason 1️⃣ 】`backgroundColor` setting in the outermost (originally in `App.js`), and profile component separated by multiple layers. However, I didn't use redux at the beginning.
+- 👉【Solution 1️⃣ 】Use redux, and it based on last description.
 
-👀【Reason 2️⃣】During the exercise, I found that component which have `Provider` could not use the react-redux `useDispatch` method. 
-> note. `backgroundColor` setting in the outermost (originally in App.js).
+--
 
-👉【Solution 2️⃣】Try in coding and wrapped `DotBackground` in `ViewLayer` component of `views` folder, because the `backgroundColor` is also the display layer root.
+- 👀【Reason 2️⃣ 】During the exercise, I found that component which have `Provider` could not use the react-redux `useDispatch` method. 
+    > note. `backgroundColor` setting in the outermost (originally in App.js).
+
+- 👉【Solution 2️⃣ 】Try in coding and wrapped `DotBackground` in `ViewLayer` component of `views` folder, because the `backgroundColor` is also the display layer root.
