@@ -1,5 +1,5 @@
-- 👉 [🔗 Instructions by Hahow.](https://github.com/hahow/hahow-recruit/blob/master/frontend.md)
-- 👉 [🔗 Demo on Github Page.](https://tristali.github.io/Heros/#/)
+👉 [🔗 Instructions by Hahow.](https://github.com/hahow/hahow-recruit/blob/master/frontend.md) <br />
+👉 [🔗 Demo on Github Page.](https://tristali.github.io/Heros/#/) <br />
 
 ## 🚀 Quick Start
 
@@ -81,35 +81,25 @@ npm start
 
 👉【Purpose of usage】 Use CSS in JavaScript.
 
---
-
 ### [🔗 React Router](https://reactrouter.com/)
 > 📄 A collection of navigational components that compose declaratively with your application.
 
 👉 【Purpose of usage】 Build a single-page web application with navigation without the page refreshing as the user navigates.
-
---
 
 ### [🔗 Axios](https://github.com/axios/axios)
 > 📄 Promise based HTTP client for the browser and node.js.
 
 👉 【Purpose of usage】 Set HTTP methods and transforms for JSON data.
 
---
-
 ### [🔗 Redux](https://redux.js.org/)
 > 📄 A Predictable State Container for JavaScript Apps.
 
 👉 【Purpose of usage】 Manage all state in one store.
 
---
-
 ### [🔗 TypeScript](https://www.typescriptlang.org)
 > 📄 It is a strict syntactical superset of JavaScript and adds optional static typing to the language.
 
 👉 【Purpose of usage】 Make code easier to read, understand and debug.
-
---
 
 ### [🔗 Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension#13-use-redux-devtools-extension-package-from-npm)
 > 📄 For TypeScript, which contains all the definitions, or just use (window as any) (see Recipes for an example).
@@ -121,8 +111,6 @@ npm start
 👉 When the constant, variable or key can't express the definition fully.
 > [🔗 Example](https://github.com/tristali/Heros/blob/master/src/assets/config.tsx) line 35-43
 
---
-
 👉 If one file has more than one important things, I'll add annotation on it to distinguish them.
 > [🔗 Example](https://github.com/tristali/Heros/blob/master/src/assets/method.tsx)
 
@@ -130,19 +118,15 @@ npm start
 
 ### 😓 Related technology about Styled-Components, TypeScript and Redux.
 
-- 👀【Reason】In the past experience, I used these on the mature project (based on the predecessors), so it’s not understand very completely.
-- 👉【Solution】Google keywords, watch the online course, search in books and so on. And the most important thing is coding.
-
---
+👀【Reason】In the past experience, I used these on the mature project (based on the predecessors), so it’s not understand very completely. <br />
+👉【Solution】Google keywords, watch the online course, search in books and so on. And the most important thing is coding. <br />
 
 ### 😓 Related state manage about set `backgroundColor` and so on is based on the current Hero.
 
-- 👀【Reason 1️⃣ 】`backgroundColor` setting in the outermost (originally in `App.js`), and profile component separated by multiple layers. However, I didn't use redux at the beginning.
-- 👉【Solution 1️⃣ 】Use redux, and it based on last description.
+👀【Reason 1️⃣ 】`backgroundColor` setting in the outermost (originally in `App.js`), and profile component separated by multiple layers. However, I didn't use redux at the beginning. <br />
+👉【Solution 1️⃣ 】Use redux, and it based on last description. <br />
+<br />
+👀【Reason 2️⃣ 】During the exercise, I found that component which have `Provider` could not use the react-redux `useDispatch` method.
+> note. `backgroundColor` setting in the outermost (originally in App.js).
 
---
-
-- 👀【Reason 2️⃣ 】During the exercise, I found that component which have `Provider` could not use the react-redux `useDispatch` method. 
-    > note. `backgroundColor` setting in the outermost (originally in App.js).
-
-- 👉【Solution 2️⃣ 】Try in coding and wrapped `DotBackground` in `ViewLayer` component of `views` folder, because the `backgroundColor` is also the display layer root.
+👉【Solution 2️⃣ 】Try in coding and wrapped `DotBackground` in `ViewLayer` component of `views` folder, because the `backgroundColor` is also the display layer root. <br />
