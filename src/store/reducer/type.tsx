@@ -1,10 +1,10 @@
 import {
   MODIFY_BGC,
-  INITAL_BGC,
+  INITIAL_BGC,
   MODIFY_PROFILE,
-  INITAL_PROFILE,
+  INITIAL_PROFILE,
   MODIFY_REMAINDER,
-  INITAL_REMAINDER,
+  INITIAL_REMAINDER,
   MODIFY_PROFILE_LOADING,
 } from '../action';
 import type { BackgroundColorType } from '../../components/DotBackground';
@@ -32,8 +32,8 @@ interface ModifyBGCInterface {
   payload: BackgroundColorType;
 }
 
-interface InitalBGCInterface {
-  type: typeof INITAL_BGC;
+interface InitialBGCInterface {
+  type: typeof INITIAL_BGC;
   payload: BackgroundColorType;
 }
 
@@ -42,8 +42,8 @@ interface ModifyProfileInterface {
   payload: ProfileType;
 }
 
-interface InitalProfileInterface {
-  type: typeof INITAL_PROFILE;
+interface InitialProfileInterface {
+  type: typeof INITIAL_PROFILE;
   payload: ProfileType;
 }
 
@@ -52,8 +52,8 @@ interface ModifyRemainderInterface {
   payload: RemainderType;
 }
 
-interface InitalRemainderInterface {
-  type: typeof INITAL_REMAINDER;
+interface InitialRemainderInterface {
+  type: typeof INITIAL_REMAINDER;
   payload: RemainderType;
 }
 
@@ -69,10 +69,10 @@ export type {
   IsProfileLoadingType,
   ProfilePropsKeyType,
   ModifyBGCInterface,
-  InitalBGCInterface,
+  InitialBGCInterface,
   ModifyProfileInterface,
-  InitalProfileInterface,
+  InitialProfileInterface,
   ModifyRemainderInterface,
-  InitalRemainderInterface,
+  InitialRemainderInterface,
   ModifyProfileLoadingInterface,
 };

@@ -1,27 +1,27 @@
 import {
   MODIFY_BGC,
-  INITAL_BGC,
+  INITIAL_BGC,
   MODIFY_PROFILE,
-  INITAL_PROFILE,
+  INITIAL_PROFILE,
   MODIFY_REMAINDER,
-  INITAL_REMAINDER,
+  INITIAL_REMAINDER,
   MODIFY_PROFILE_LOADING,
 } from '../action';
 import config from '../../assets/config';
 import type {
   StateType,
   ModifyBGCInterface,
-  InitalBGCInterface,
+  InitialBGCInterface,
   ModifyProfileInterface,
-  InitalProfileInterface,
+  InitialProfileInterface,
   ModifyRemainderInterface,
-  InitalRemainderInterface,
+  InitialRemainderInterface,
   ModifyProfileLoadingInterface,
 } from './type';
 
 const { colors } = config;
 
-const initalState = {
+const initialState = {
   backgroundColor: colors.main,
   profile: {
     str: 0,
@@ -34,14 +34,14 @@ const initalState = {
 };
 
 const reducer = (
-  state: StateType & any = initalState,
+  state: StateType & any = initialState,
   action:
     | ModifyBGCInterface
-    | InitalBGCInterface
+    | InitialBGCInterface
     | ModifyProfileInterface
-    | InitalProfileInterface
+    | InitialProfileInterface
     | ModifyRemainderInterface
-    | InitalRemainderInterface
+    | InitialRemainderInterface
     | ModifyProfileLoadingInterface
 ) => {
   switch (action.type) {
@@ -51,7 +51,7 @@ const reducer = (
         backgroundColor: action.payload,
       };
 
-    case INITAL_BGC:
+    case INITIAL_BGC:
       return {
         ...state,
         backgroundColor: action.payload,
@@ -63,7 +63,7 @@ const reducer = (
         profile: action.payload,
       };
 
-    case INITAL_PROFILE:
+    case INITIAL_PROFILE:
       return {
         ...state,
         profile: action.payload,
@@ -75,7 +75,7 @@ const reducer = (
         remainder: action.payload,
       };
 
-    case INITAL_REMAINDER:
+    case INITIAL_REMAINDER:
       return {
         ...state,
         remainder: action.payload,
