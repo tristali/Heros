@@ -2,11 +2,11 @@ import type { BackgroundColorType } from '../components/DotBackground';
 import type { ProfileType, RemainderType, IsProfileLoadingType } from './reducer/type';
 
 const MODIFY_BGC = 'MODIFY_BGC';
-const INITAL_BGC = 'INITAL_BGC';
+const INITIAL_BGC = 'INITIAL_BGC';
 const MODIFY_PROFILE = 'MODIFY_PROFILE';
-const INITAL_PROFILE = 'INITAL_PROFILE';
+const INITIAL_PROFILE = 'INITIAL_PROFILE';
 const MODIFY_REMAINDER = 'MODIFY_REMAINDER';
-const INITAL_REMAINDER = 'INITAL_REMAINDER';
+const INITIAL_REMAINDER = 'INITIAL_REMAINDER';
 const MODIFY_PROFILE_LOADING = 'MODIFY_PROFILE_LOADING';
 
 function modifyBackgroundColor(newBackgroundColor: BackgroundColorType) {
@@ -16,9 +16,9 @@ function modifyBackgroundColor(newBackgroundColor: BackgroundColorType) {
   };
 }
 
-function initalBackgroundColor(backgroundColor: BackgroundColorType) {
+function initialBackgroundColor(backgroundColor: BackgroundColorType) {
   return {
-    type: INITAL_BGC,
+    type: INITIAL_BGC,
     payload: backgroundColor,
   };
 }
@@ -30,9 +30,9 @@ function modifyProfile(newProfile: ProfileType) {
   };
 }
 
-function initalProfile(profile: ProfileType) {
+function initialProfile(profile: ProfileType) {
   return {
-    type: INITAL_PROFILE,
+    type: INITIAL_PROFILE,
     payload: profile,
   };
 }
@@ -44,9 +44,9 @@ function modifyRemainder(newRemainder: RemainderType) {
   };
 }
 
-function initalRemainder() {
+function initialRemainder() {
   return {
-    type: INITAL_REMAINDER,
+    type: INITIAL_REMAINDER,
     payload: 0,
   };
 }
@@ -61,16 +61,16 @@ function modifyProfileLoading(isLoading: IsProfileLoadingType) {
 export { 
   MODIFY_BGC, 
   modifyBackgroundColor, 
-  INITAL_BGC, 
-  initalBackgroundColor, 
+  INITIAL_BGC, 
+  initialBackgroundColor, 
   MODIFY_PROFILE, 
   modifyProfile, 
-  INITAL_PROFILE, 
-  initalProfile,
+  INITIAL_PROFILE, 
+  initialProfile,
   MODIFY_REMAINDER,
   modifyRemainder,
-  INITAL_REMAINDER,
-  initalRemainder,
+  INITIAL_REMAINDER,
+  initialRemainder,
   MODIFY_PROFILE_LOADING,
   modifyProfileLoading,
 };

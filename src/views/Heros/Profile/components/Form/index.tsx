@@ -4,10 +4,9 @@ import Div from './style';
 import ConfirmButton from '../ConfirmButton';
 import Info from '../Info';
 import type { StateType, ProfilePropsKeyType } from '../../../../../store/reducer/type';
-import type { HeroIdType } from '../../index';
 
 function Form(props:{
-  heroId: HeroIdType
+  heroId: string;
 }) {
   const { heroId } = props;
   const profile = useSelector((state: StateType) => state.profile);
