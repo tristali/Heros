@@ -18,7 +18,7 @@ function Profile(props: {
     dispatch(modifyProfileLoading(true));
 
     fetchProfile(heroId).then((result) => {
-      dispatch(initialProfile(result.data));
+      dispatch(initialProfile(result));
       dispatch(initialRemainder());
       dispatch(modifyProfileLoading(false));
     }).catch((e)=>alert(e.message));

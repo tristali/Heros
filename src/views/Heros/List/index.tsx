@@ -17,7 +17,7 @@ function List() {
   useEffect(()=>{
     setIsLoading(true);
     fetchList().then((result)=>{
-      setList(result.data);
+      setList(result);
       setIsLoading(false);
     });
   }, [setList, setIsLoading, fetchList]);

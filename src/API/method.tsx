@@ -1,35 +1,37 @@
-import { default as OriginAxios } from 'axios';
-
 const baseURL = 'https://hahow-recruit.herokuapp.com';
 
-const createAxios = (props: {
-  method: 'get' | 'patch';
-  baseURL: string;
+const createFetch = (props: {
+  method: 'GET' | 'PATCH';
   url: string;
   data?: { [key: string]: number | null | string }
 }) => {
-  const argument = {'Content-Type': 'application/json', ... props};
-  return OriginAxios(argument);
-};
+  const { method, url, data } = props;
 
-const setAxios = (
-  method: 'get' | 'patch',
-  url: string, 
-  data?: { [key: string]: number | null | string }
-) => {
-  if (method === 'patch' && data) {
-    return createAxios({
-      method,
-      baseURL,
-      url,
-      data,
-    });
-  }
-  return createAxios({
+  return fetch(url,{
+    headers: {
+      'content-type': 'application/json'
+    },
     method,
-    baseURL,
-    url,
+    body: JSON.stringify(data),
   });
 };
 
-export { setAxios };
+const setFetch = (
+  method: 'GET' | 'PATCH',
+  url: string, 
+  data?: { [key: string]: number | null | string }
+) => {
+  if (method === 'PATCH' && data) {
+    return createFetch({
+      method,
+      url: baseURL+url,
+      data,
+    });
+  }
+  return createFetch({
+    method,
+    url: baseURL+url,
+  });
+};
+
+export { setFetch };

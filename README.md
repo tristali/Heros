@@ -86,11 +86,6 @@ npm start
 
 👉 【Purpose of usage】 Build a single-page web application with navigation without the page refreshing as the user navigates.
 
-### [🔗 Axios](https://github.com/axios/axios)
-> 📄 Promise based HTTP client for the browser and node.js.
-
-👉 【Purpose of usage】 Set HTTP methods and transforms for JSON data.
-
 ### [🔗 Redux](https://redux.js.org/)
 > 📄 A Predictable State Container for JavaScript Apps.
 
@@ -115,11 +110,6 @@ npm start
 > [🔗 Example](https://github.com/tristali/Heros/blob/master/src/assets/method.tsx)
 
 ## 💪 Obstacle
-
-### 😓 Related technology about Styled-Components, TypeScript and Redux.
-
-👀【Reason】In the past experience, I used these on the mature project (based on the predecessors), so it’s not understand very completely. <br />
-👉【Solution】Google keywords, watch the online course, search in books and so on. And the most important thing is coding. <br />
 
 ### 😓 Related state manage about set `backgroundColor` and so on is based on the current Hero.
 
