@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
@@ -16,7 +16,7 @@ function App() {
     <Provider store={store}>
       <ResetStyle />
       <GlobalStyle />
-      <Router>
+      <Router basename="/">
         <ViewLayer />
       </Router>
     </Provider>
@@ -24,3 +24,5 @@ function App() {
 }
 
 export default App;
+
+/** 'npm run deploy' to deploy gh-pages */
