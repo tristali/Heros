@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/Heros/static/js/main.64243489.chunk.js",
+    "main.js.map": "/Heros/static/js/main.64243489.chunk.js.map",
+    "runtime-main.js": "/Heros/static/js/runtime-main.56705cb8.js",
+    "runtime-main.js.map": "/Heros/static/js/runtime-main.56705cb8.js.map",
+    "static/js/2.5e1f8b7e.chunk.js": "/Heros/static/js/2.5e1f8b7e.chunk.js",
+    "static/js/2.5e1f8b7e.chunk.js.map": "/Heros/static/js/2.5e1f8b7e.chunk.js.map",
+    "index.html": "/Heros/index.html",
+    "precache-manifest.27dee44aaf57aaeff1196e145b2b833a.js": "/Heros/precache-manifest.27dee44aaf57aaeff1196e145b2b833a.js",
+    "service-worker.js": "/Heros/service-worker.js",
+    "static/js/2.5e1f8b7e.chunk.js.LICENSE.txt": "/Heros/static/js/2.5e1f8b7e.chunk.js.LICENSE.txt",
+    "static/media/boomDialog.091b27fe.svg": "/Heros/static/media/boomDialog.091b27fe.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.56705cb8.js",
+    "static/js/2.5e1f8b7e.chunk.js",
+    "static/js/main.64243489.chunk.js"
+  ]
+}
