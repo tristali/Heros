@@ -4,26 +4,25 @@ import Button from '../../../../../components/Button';
 import Remained from '../Remained';
 import Div from './style';
 import { editProfile } from '../../../../../API/Heros';
-import { modifyProfileLoading, initalRemainder } from '../../../../../store/action';
+import { modifyProfileLoading, initialRemainder } from '../../../../../store/action';
 import type { StateType } from '../../../../../store/reducer/type';
-import type { HeroIdType } from '../../index';
- 
+
 function ConfirmButton(props:{
-  heroId: HeroIdType
+  heroId: string;
 }) {
   const { heroId } = props;
   const profile = useSelector((state: StateType) => state.profile);
   const remainder = useSelector((state: StateType) => state.remainder);
   const backgroundColor = useSelector((state: StateType) => state.backgroundColor);
   const dispatch = useDispatch();
-  const isAbledSave = remainder === 0;
+  const isAbleToSave = remainder === 0;
   const color = backgroundColor[1];
 
   const handleSave = () => {
     dispatch(modifyProfileLoading(true));
     editProfile(heroId, profile).then(()=>{
       dispatch(modifyProfileLoading(false));
-      dispatch(initalRemainder());
+      dispatch(initialRemainder());
     });
   }
 
@@ -35,10 +34,10 @@ function ConfirmButton(props:{
   `
 
   return <Div>
-    <Button borderWidth='1px' disabled={isAbledSave} styles={remainedStyles} color={color}>
+    <Button borderWidth='1px' disabled={isAbleToSave} styles={remainedStyles} color={color}>
       <Remained number={remainder} />
     </Button>
-    <Button onClick={handleSave} disabled={!isAbledSave} color={color}>Save</Button>
+    <Button onClick={handleSave} disabled={!isAbleToSave} color={color}>Save</Button>
   </Div>;
 }
 

@@ -10,13 +10,14 @@ type RouteType = {
   render: React.FC;
   exact?: boolean;
   routes?: RoutesType;
+  heroId?: string;
 }
 
 type RoutesType = RouteType[]
 
 type ConfigType = { routes: RoutesType };
 
-const config: ConfigType = {
+const config = (heroId: string):ConfigType => ({
   routes: [
     {
       name: 'heroes',
@@ -26,7 +27,7 @@ const config: ConfigType = {
         {
           name: 'heroId',
           path: '/heroes/:heroId',
-          render: () => <Profile />,
+          render: () => <Profile heroId={heroId}/>,
         },
       ],
     },
@@ -42,7 +43,7 @@ const config: ConfigType = {
       render: () => <NotFound404 />,
     },
   ],
-};
+});
 
 export default config;
 export type { RoutesType, RouteType };
