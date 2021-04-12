@@ -39,7 +39,7 @@ npm start
     │   ├── Button
     │   ├── DotBackground
     │   ├── Header
-    │   ├── IconBotton
+    │   ├── IconButton
     │   └── Loading
     ├── router                    
     │   ├── components

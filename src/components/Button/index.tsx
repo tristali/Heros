@@ -3,14 +3,14 @@ import { default as StyledButton } from './style';
 import config from '../../assets/config';
 
 const { colors } = config;
-type IconBottonType = {
+type IconButtonType = {
   children: React.ReactNode | React.FC | string;
   color: string;
   disabled: boolean;
   onClick?: (e: React.MouseEvent<HTMLElement>) => void;
   styles?: string;
 }
-type ButtonType = IconBottonType & {
+type ButtonType = IconButtonType & {
   borderWidth: string;
   isIcon: boolean;
 }
@@ -32,4 +32,4 @@ Button.defaultProps = {
 };
 
 export default Button;
-export type { IconBottonType };
+export type { IconButtonType };
